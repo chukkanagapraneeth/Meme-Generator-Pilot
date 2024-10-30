@@ -65,3 +65,15 @@ function updateMemeCanvas(canvas, image, topText, bottomText) {
   ctx.strokeText(bottomText, xOffSet, height - yOffSet);
   ctx.fillText(bottomText, xOffSet, height - yOffSet);
 }
+
+function alertBottomText() {
+  const btext = document.getElementById("bottomText").value;
+  alert(btext);
+}
+
+document.getElementById("meme").onclick = alertBottomText;
+
+// document.getElementById("meme").onclick = function () {
+//   const bottomText = document.getElementById("bottomText").value;
+//   alert(bottomText);
+// };
